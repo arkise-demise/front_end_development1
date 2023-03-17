@@ -10,31 +10,39 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Digital Clock</title>
+		<title>Multiplication App</title>
 		<link
 			rel="stylesheet"
-			href="style.css"
+			href="index.css"
 		/>
 	</head>
 	<body>
-		<h2>Digital Clock</h2>
-		<div class="clock">
-			<div>
-				<span id="hour">00</span>
-				<span class="text">Hours</span>
-			</div>
-			<div>
-				<span id="minutes">00</span>
-				<span class="text">minutes</span>
-			</div>
-			<div>
-				<span id="seconds">00</span>
-				<span class="text">seconds</span>
-			</div>
-			<div>
-				<span id="ampm">AM</span>
-			</div>
-		</div>
-		<script src="app.js"></script>
+		<form
+			class="form"
+			id="form"
+		>
+			<h4
+				class="score"
+				id="score"
+			>
+				score: 0
+			</h4>
+			<h1 id="question">what is 1 multiply by 1?</h1>
+			<input
+				type=" text"
+				class="input"
+				id="input"
+				placeholder="Enter your answer"
+				autofocus
+				autocomplete="off"
+			/>
+			<button
+				type="submit"
+				class="btn"
+			>
+				submit
+			</button>
+		</form>
+		<script src="index.js"></script>
 	</body>
 </html>
